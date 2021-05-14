@@ -1,0 +1,26 @@
+Cleo2525 bot basically posts a countdown by year and date leading up to the events of the series Cleopatra 2525. It'll be hosted on Heroku and do it automatically each day at a certain time. It also posts the intro each day as well.
+
+NEEDED
+-Twitter API
+-Node/Express
+-Heroku for hosting
+-Twitter account
+
+//OBJECTS
+
+//PACKAGES
+//TWITTER CONNECTION
+//POST CONTENT
+//COUNTDOWN FUNCTION
+//ACTUAL POST OBJECT
+
+TWEET PROCESS:
+//check the time of day
+//connect to Twitter
+//prepare the post content
+//make the post
+
+//api documentation: Scheduled Tweets
+
+//LOG
+-applied to Twitter developer API
