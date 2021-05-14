@@ -10,18 +10,38 @@ NEEDED
 
 //PACKAGES
 //TWITTER CONNECTION
+
 //POST CONTENT
+//-get countdown variable
+//prepare post: "Only [variable] years and [days] days left until the events of Cleopatra 2525! [youtube link to intro]"
+//-push to post object
+
 //COUNTDOWN FUNCTION
+//-get current date
+//-figure out how off it is from 01/01/2525
+//-convert to years and days
+//-pass as variable to post content
 //ACTUAL POST OBJECT
 
 TWEET PROCESS:
 //check the time of day
-//connect to Twitter
-//prepare the post content
+//if time of day is true: connect to Twitter
+//prepare the post content: IE, create a scheduled tweet
+//get scheduled tweets
 //make the post
 
 //api documentation: Scheduled Tweets
 
+//STEPS:
+-make basic Node backend
+-attach to Heroku hosting
+-set automatic timely ping
+
 //LOG
 -applied to Twitter developer API
 -cloned repo
+-psuedocode outline for bot
+-created basic Node/Express hello world backend
+-created Heroku account
+-installed Heroku CLI
+NEXT: deploy basic Node Express app to Heroku

@@ -1,0 +1,22 @@
+{
+  "name": "cleo-bot",
+  "version": "1.0.0",
+  "description": "Twitter scheduled tweet bot about a certain sci-fi show from 2000.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MHWillard/cleo-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MHWillard/cleo-bot/issues"
+  },
+  "homepage": "https://github.com/MHWillard/cleo-bot#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
