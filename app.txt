@@ -45,3 +45,7 @@ TWEET PROCESS:
 -created Heroku account
 -installed Heroku CLI
 NEXT: deploy basic Node Express app to Heroku
+
+5/15
+-created heroku branch, pushed app to branch, made procfile
+-created environmental variable file and set app.js to read
