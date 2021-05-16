@@ -18,6 +18,8 @@
   "homepage": "https://github.com/MHWillard/cleo-bot#readme",
   "dependencies": {
     "dotenv": "^9.0.2",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "node-cron": "^3.0.0",
+    "twit": "^2.2.11"
   }
 }

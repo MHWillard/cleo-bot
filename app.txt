@@ -38,6 +38,7 @@ TWEET PROCESS:
 -set automatic timely ping
 
 //LOG
+5/14
 -applied to Twitter developer API
 -cloned repo
 -psuedocode outline for bot
@@ -49,3 +50,19 @@ NEXT: deploy basic Node Express app to Heroku
 5/15
 -created heroku branch, pushed app to branch, made procfile
 -created environmental variable file and set app.js to read
+-pushed changes to remote Heroku and confirmed working
+-looked at Twitter API and planned how to execute with POST
+-created Protonmail to use for Twitter bot account
+-created Twitter bot account
+NEXT: install Twit NPM for use to manage API connection
+
+5/16
+-installed twit npm package
+-planned out how to approach scheduled cron jobs in Node; package might work best here
+-installed node-cron package
+-tried working out how to use cron as a module but decided to assign in app.js for now
+
+//routinely ping
+//test if current time converted = 6:30 PM EST converted
+//OR: run internal clock
+//if condition is true: internal log of success (later: prepare tweet)

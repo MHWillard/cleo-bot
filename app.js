@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const cron = require('node-cron')
 
 require('dotenv').config()
 const port = process.env.PORT;
@@ -11,6 +12,9 @@ app.get('/', (req, res) => {
     res.send('Backend online.');
     //run date countdown
     //if countdown is good: build and fire tweet to API as POST request
+    cron.schedule('2 * * * *', () => {
+        console.log('This cron task will run a Tweet job every day. Currently it\'s running every 2 minutes or so.');
+    })
 });
 
 app.listen(port, (req, res)=> {
