@@ -64,6 +64,10 @@ NEXT: install Twit NPM for use to manage API connection
 -set up cron job and ran on Heroku: only did once instead of every two minutes
 NEXT: fix cron job to repeat regularly; set up Twit to use with API
 
+5/17
+-fixed cron job to run every minute
+-started working on timer.js - should install Luxon to make it work or Day.js
+
 //routinely ping
 //test if current time converted = 6:30 PM EST converted
 //OR: run internal clock

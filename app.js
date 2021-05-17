@@ -12,8 +12,9 @@ app.get('/', (req, res) => {
     res.send('Backend online.');
     //run date countdown
     //if countdown is good: build and fire tweet to API as POST request
-    cron.schedule('2 * * * *', () => {
-        console.log('This cron task will run a Tweet job every day. Currently it\'s running every 2 minutes or so.');
+    //this cron job, when finished, will run every 24 hours and create the scheduled tweet
+    cron.schedule('* * * * *', () => {
+        console.log('This cron task will run a Tweet job every day. Currently it\'s running every minute or so.');
     })
 });
 
