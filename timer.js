@@ -5,5 +5,8 @@
 
 const dayjs = require('dayjs');
 
-let now = dayjs().format('MM/DD/YYYY').toString();
-let future = dayjs('2525-01-01').format('MM/DD/YYYY').toString();
+let now = dayjs().format('MM/DD/YYYY');
+let future = dayjs('2525-01-01').format('MM/DD/YYYY');
+
+let nowString = now.toString();
+let futureString = future.toString();
