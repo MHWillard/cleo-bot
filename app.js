@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const cron = require('node-cron')
-import {now, future} from './timer.js'
+const cron = require('node-cron');
+const {now, future} = require('./timer.js');
 
 require('dotenv').config()
 const port = process.env.PORT;
