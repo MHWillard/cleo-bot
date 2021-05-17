@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const cron = require('node-cron')
+import {now, future} from './timer.js'
 
 require('dotenv').config()
 const port = process.env.PORT;
@@ -15,6 +16,8 @@ app.get('/', (req, res) => {
     //this cron job, when finished, will run every 24 hours and create the scheduled tweet
     cron.schedule('* * * * *', () => {
         console.log('This cron task will run a Tweet job every day. Currently it\'s running every minute or so.');
+        console.log(now);
+        console.log(future);
     })
 });
 

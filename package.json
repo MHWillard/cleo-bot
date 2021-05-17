@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MHWillard/cleo-bot#readme",
   "dependencies": {
+    "dayjs": "^1.10.4",
     "dotenv": "^9.0.2",
     "express": "^4.17.1",
     "node-cron": "^3.0.0",
