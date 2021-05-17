@@ -67,6 +67,7 @@ NEXT: fix cron job to repeat regularly; set up Twit to use with API
 5/17
 -fixed cron job to run every minute
 -started working on timer.js - should install Luxon to make it work or Day.js
+-installed day.js as module to test cron job dates; still working on it
 
 //routinely ping
 //test if current time converted = 6:30 PM EST converted
