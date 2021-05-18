@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const cron = require('node-cron');
-const {nowString, futureString} = require('./timer.js');
+const {nowString, futureString, countdownString} = require('./timer.js');
 
 require('dotenv').config()
 const port = process.env.PORT;
@@ -11,15 +11,13 @@ if (port == null || port == "") {
 
 app.get('/', (req, res) => {
     res.send('Backend online.');
-    console.log(nowString);
-    console.log(futureString);
+    console.log(countdownString);
     //run date countdown
     //if countdown is good: build and fire tweet to API as POST request
     //this cron job, when finished, will run every 24 hours and create the scheduled tweet
     cron.schedule('* * * * *', () => {
         console.log('This cron task will run a Tweet job every day. Currently it\'s running every minute or so.');
-        console.log(nowString);
-        console.log(futureString);
+        console.log(countdownString);
     })
 });
 
