@@ -13,7 +13,8 @@ let countdown = dayjs().from(dayjs('2525-01-01'));
 
 let nowString = now.format('MM/DD/YYYY').toString();
 let futureString = future.format('MM/DD/YYYY').toString();
-let countdownString = countdown.format('MM/DD/YYYY').toString();
+//let countdownString = countdown.format('MM/DD/YYYY').toString();
+let countdownString = countdown;
 
 //relativetime day.js plugin
 
