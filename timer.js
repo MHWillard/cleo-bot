@@ -4,6 +4,7 @@
 //create and return print out: number of years and days
 
 const dayjs = require('dayjs');
+let relativeTime = require('dayjs/plugin/relativeTime');
 
 let now = dayjs();
 let future = dayjs('2525-01-01');
@@ -11,7 +12,6 @@ let future = dayjs('2525-01-01');
 let nowString = now.format('MM/DD/YYYY').toString();
 let futureString = future.format('MM/DD/YYYY').toString();
 
-//console.log(nowString);
-//console.log(futureString);
+//relativetime day.js plugin
 
 module.exports = {nowString, futureString}
