@@ -13,3 +13,5 @@ let futureString = future.format('MM/DD/YYYY').toString();
 
 //console.log(nowString);
 //console.log(futureString);
+
+module.exports = {nowString, futureString}
