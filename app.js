@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const cron = require('node-cron');
-const {nowString, futureString, countdownString} = require('./timer.js');
+const {years_left, days_left} = require('./timer.js');
 
 require('dotenv').config()
 const port = process.env.PORT;
@@ -11,13 +11,15 @@ if (port == null || port == "") {
 
 app.get('/', (req, res) => {
     res.send('Backend online.');
-    console.log(countdownString);
+    console.log('Years left: ' + years_left);
+    console.log('Days left: ' + days_left);
     //run date countdown
     //if countdown is good: build and fire tweet to API as POST request
     //this cron job, when finished, will run every 24 hours and create the scheduled tweet
     cron.schedule('* * * * *', () => {
-        console.log('This cron task will run a Tweet job every day. Currently it\'s running every minute or so.');
-        console.log(countdownString);
+        console.log('There are ' + years_left + ' years and ' + days_left + ' days left until the events of Cleopatra 2525! https://www.youtube.com/watch?v=e2ZRSwul7cE');
+        console.log('Years left: ' + years_left);
+        console.log('Days left: ' + days_left);
     })
 });
 
