@@ -81,7 +81,7 @@ NEXT: fix cron job to repeat regularly; set up Twit to use with API
 -added env file to gitignore and keys to heroku
 -worked on setting developer API connection to log search data to console to establish connection
 -was able to get API connection to work but only with local .env files: need to see:
---how to run Heroku non-locally
+--how to run Heroku non-locally (the Heroku app's settings has a web URL that you can run over the web)
 --how to pull from config vars
 
 //routinely ping
