@@ -12,7 +12,7 @@ if (port == null || port == "") {
 
 app.get('/', (req, res) => {
     res.send('Backend online.');
-    T.get('search/tweets', {q: 'batman', count: 10}, function(err, data, response) {
+    T.get('search/tweets', {q: 'batman', count: 1}, function(err, data, response) {
         console.log(data);
     });
     //run date countdown
@@ -22,6 +22,9 @@ app.get('/', (req, res) => {
         console.log('There are ' + years_left + ' years and ' + days_left + ' days left until the events of Cleopatra 2525! https://www.youtube.com/watch?v=e2ZRSwul7cE');
         console.log('Years left: ' + years_left);
         console.log('Days left: ' + days_left);
+        T.get('search/tweets', {q: 'superman', count: 1}, function(err, data, response) {
+            console.log(data);
+        });
     })
 });
 
