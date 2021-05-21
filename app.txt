@@ -82,9 +82,23 @@ NEXT: fix cron job to repeat regularly; set up Twit to use with API
 -worked on setting developer API connection to log search data to console to establish connection
 -was able to get API connection to work but only with local .env files: need to see:
 --how to run Heroku non-locally (the Heroku app's settings has a web URL that you can run over the web)
---how to pull from config vars
+--how to pull from config vars (Heroku web app does this)
+
+5/21
+-worked on blocking out next steps for development
+-installed heroku scheduler and read docs for timing the job
+-set up scheduler job to test on heroku (will continue as much dev on local as possible); need to learn how to set tasks for it
 
 //routinely ping
 //test if current time converted = 6:30 PM EST converted
 //OR: run internal clock
 //if condition is true: internal log of success (later: prepare tweet)
+
+//NEXT STEPS:
+//run cron job and connect to API
+//fetch scheduled tweets and parse JSON: if there are any for today, end
+//if not: schedule tweet 30 min from call date for today with text
+//how can we make sure the cron job is only called once? Seems to assume it's running all the time
+//cron job also fires when route is accessed, counts down, and THEN commits
+//best solution might be to set up a ping elsewhere: ping every hour or so, checks scheduled tweets for one dated today (and tweets already done today to prevent re-posting); if so, don't do anything; if not, arm a tweet
+//or: can use Heroku's scheduler add on or custom clock (docs even mention cron is bad idea) => add and test scheduler
