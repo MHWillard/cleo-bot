@@ -28,7 +28,7 @@ let T = new Twit({
 //dump to console
 
 //can I get this into an object?
-//T.get('search/tweets', {q: 'batman', count: 10}, function(err, data, response) {
+//T.get('search/tweets', {q: 'batman', count: 1}, function(err, data, response) {
     //console.log(data);
 //});
 
