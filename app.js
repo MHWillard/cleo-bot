@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
+require('dotenv').config()
 const cron = require('node-cron');
 const {years_left, days_left} = require('./timer.js');
 const {T} = require('./twitter')
 
-require('dotenv').config()
 const port = process.env.PORT;
 if (port == null || port == "") {
     port = 3000;
