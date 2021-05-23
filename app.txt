@@ -89,16 +89,28 @@ NEXT: fix cron job to repeat regularly; set up Twit to use with API
 -installed heroku scheduler and read docs for timing the job
 -set up scheduler job to test on heroku (will continue as much dev on local as possible); need to learn how to set tasks for it
 
+5/22
+-tested setup for heroku scheduler; needed to remove routes so heroku can fire it
+-ran heroku scheduler test: worked
+-tried test post: need to set user auth
+
+5/23
+-generated access tokens
+-added tokens to .env and Heroku app
+-tested Twitter API tweet command: successful
+-applied to dev account on bot Twitter to gain access to correct API keys: need to approve
+-tested JS line break for tweet
+-on the side: added images to bot Twitter account
+-dev account was confirmed, replaced API keys
+
 //routinely ping
 //test if current time converted = 6:30 PM EST converted
 //OR: run internal clock
 //if condition is true: internal log of success (later: prepare tweet)
 
 //NEXT STEPS:
-//run cron job and connect to API
-//fetch scheduled tweets and parse JSON: if there are any for today, end
-//if not: schedule tweet 30 min from call date for today with text
-//how can we make sure the cron job is only called once? Seems to assume it's running all the time
-//cron job also fires when route is accessed, counts down, and THEN commits
-//best solution might be to set up a ping elsewhere: ping every hour or so, checks scheduled tweets for one dated today (and tweets already done today to prevent re-posting); if so, don't do anything; if not, arm a tweet
-//or: can use Heroku's scheduler add on or custom clock (docs even mention cron is bad idea) => add and test scheduler
+-confirm cleopatra bot dev access
+-configure API to post
+-run tests
+-set scheduled tweets with Heroku scheduler
+-add images to account
