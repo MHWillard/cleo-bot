@@ -1,8 +1,3 @@
-//get current date/time from external API
-//convert
-//subtract from time in show: 01/01/2525
-//create and return print out: number of years and days
-
 //require dayjs and plugins
 const dayjs = require('dayjs');
 const relativeTime = require('dayjs/plugin/relativeTime');
@@ -16,12 +11,6 @@ dayjs.extend(dayOfYear);
 
 let now = dayjs();
 let future = dayjs('2525-01-01');
-//let countdown = dayjs().to(dayjs('2525-01-01').format('MM/DD/YYYY'), true);
-
-//let nowString = now.format('MM/DD/YYYY').toString();
-//let futureString = future.format('MM/DD/YYYY').toString();
-//let countdownString = countdown.format('MM/DD/YYYY');
-//et countdownString = countdown;
 
 //get current day of year, current year, and the last numerical day of the current year
 let currentDay = dayjs(now).dayOfYear()

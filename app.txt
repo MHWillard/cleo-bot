@@ -103,6 +103,10 @@ NEXT: fix cron job to repeat regularly; set up Twit to use with API
 -on the side: added images to bot Twitter account
 -dev account was confirmed, replaced API keys
 
+5/24
+-tested app bot locally
+-pushed new changes to Heroku
+
 //routinely ping
 //test if current time converted = 6:30 PM EST converted
 //OR: run internal clock
