@@ -8,8 +8,8 @@ const port = process.env.PORT;
 if (port == null || port == "") {
     port = 3000;
 }
-console.log('There are ' + years_left + ' years and ' + days_left + ' days left until the events of Cleopatra 2525!\nhttps://www.youtube.com/watch?v=e2ZRSwul7cE');
+console.log('There are ' + years_left + ' years and ' + days_left + ' days left until the events of Cleopatra 2525!');
 
-T.post('statuses/update', { status: 'There are ' + years_left + ' years and ' + days_left + ' days left until the events of Cleopatra 2525!\nhttps://www.youtube.com/watch?v=e2ZRSwul7cE' }, function(err, data, response) {
+T.post('statuses/update', { status: 'There are ' + years_left + ' years and ' + days_left + ' days left until the events of Cleopatra 2525!' }, function(err, data, response) {
     console.log(data)
   })
